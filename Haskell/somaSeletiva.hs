@@ -8,8 +8,7 @@ sumNumbers word = function word 0 0
                then function xs (total + current) realcurrent
                else 
                 function xs total realcurrent
-                                      | current /= 0 = 
-            function xs (total + current) 0 
+                                      | current /= 0 = function xs (total + current) 0 
                                       | otherwise = function xs total 0
 
 main = do
