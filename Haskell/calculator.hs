@@ -11,9 +11,6 @@ executa operation = calculadora operation 0
                                                   | (c == "Divide" && v /= 0)= calculadora t (div result  v)
                                                   | (c == "Divide" && v == 0) = -666
 
-{- [("Multiplica", 2), ("Soma", 5), ("Subtrai", 3)] -}
-
-
 main = do
     a <- getLine
     let result = executa (read a)
