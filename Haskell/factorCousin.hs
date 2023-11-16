@@ -22,18 +22,7 @@ fatPrime number | ePrimo number = [(number, 1)]
                                                 where 
                                                 counter div aux total = factors div aux (index + 1)
 
-                                                                 
-
-{- 
-
-20  | 2
-10  | 2
-5   | 5
-1
-= [(2,2), (5,1)]
- -}
-
-
+                                                            
 main = do
       a <- getLine
       let result = fatPrime (read a :: Int)
