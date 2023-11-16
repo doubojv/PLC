@@ -20,8 +20,8 @@ fatPrime number | ePrimo number = [(number, 1)]
                                              | index /= 0 =  [(aux,index)] ++ factors number (aux + 1) 0
                                              | otherwise = factors number (aux + 1) 0
                                                 where 
-                                                counter div aux total | div /= 1 = factors div aux (index + 1)
-                                                                      | otherwise = factors div aux (index + 1)
+                                                counter div aux total = factors div aux (index + 1)
+
                                                                  
 
 {- 
